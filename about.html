@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button">Books <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="dont-make-me-think.html" class="w3-bar-item w3-button">Don't Make Me Think</a>
+      <a href="rocket-surgery-made-easy.html" class="w3-bar-item w3-button">Rocket Surgery Made Easy</a>
+    </div>
+  </div>
+  <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">Books</a>
+    <a href="about.html" class="w3-bar-item w3-button">About</a>
+  </div>
+</div>
+<div class="w3-container w3-padding-64">
+  <h1>About</h1>
+  <p>This website is meant for teaching the content from the books “Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability” and “Rocket surgery made easy: the do-it-yourself guide to finding and fixing usability problems.” The creation of this website is based on a number of requirements:</p>
+  <ol>
+    <li>Create a simple website that is hosted online (submit the link in a text file to D2L Dropbox) and has no pop ups</li>
+    <li>Implement a mechanism for navigating your website that takes advantage of the fact that web users "browse" content much like walking into a clothing store, clicking on the first target of opportunity even if it doesn't 100% match the user's ultimate goal.</li>
+    <li>Implement anchor points (images located intelligently) to guide the user’s thoughts through a storyline of the books.</li>
+    <li>Ensure that your web design minimizes the cognitive load necessary to browse your content</li>
+    <li>Implement action words in your text on the left-hand side of the screen, taking advantage of the fact that users do not read sequentially through bodies of text</li>
+    <li>Ensure that the user does not pose questions when navigating your site</li>
+    <li>Implement a UI design that takes advantage of the following UI design guideline:  Don't squander the user's patience</li>
+    <li>Implement a singular strong focal point in the main page of your site</li>
+    <li>Make navigational elements obvious</li>
+    <li>Make use of effective writing</li>
+    <li>Include plenty of white space in your design</li>
+    <li>Communicate using visible language</li>
+    <li>Use at least one common web convention (i.e. search bar top right corner)</li>
+    <li>Website is visually appealing, uses proper grammar and spelling, and is a pleasure to navigate</li>
+  </ol>
+</div>
+<footer>
+  <div class="w3-container w3-margin-top w3-center w3-black">
+    <p>Created by Oleksandr Stepanenko. 2018</p>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

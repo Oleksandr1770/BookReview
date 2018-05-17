@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Book Review</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button">Books <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="dont-make-me-think.html" class="w3-bar-item w3-button">Don't Make Me Think</a>
+      <a href="rocket-surgery-made-easy.html" class="w3-bar-item w3-button">Rocket Surgery Made Easy</a>
+    </div>
+  </div>
+  <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button">Books</a>
+    <a href="about.html" class="w3-bar-item w3-button">About</a>
+  </div>
+</div>
+
+<!-- Books grid -->
+<div class="w3-row-padding w3-padding-64">
+  <h1>Books that were summarized:</h1>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <a href="dont-make-me-think.html"><img src="images/dont.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    <div class="w3-container w3-white">
+      <p><strong>Don't Make Me Think [Revisited]. A Common Sense Approach to Web and Mobile Usability</strong></p>
+      <p>Usability lessons from Steve Krug's "Don't Make Me Think" are a good start with web usability. Quick summary of the chapters will help you understand how to improve usability of your website and keep your users happy.</p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <a href="rocket-surgery-made-easy.html"><img src="images/rocket.jpg" style="width:100%" class="w3-hover-opacity"></a>
+    <div class="w3-container w3-white">
+      <p><strong>Rocket Surgery Made Easy. The Do-It-Yourself Guide to Finding and Fixing Usability Problems</strong></p>
+      <p>"Rocket Surgery Made Easy" by Steve Krug will give you some advices about usability testing and everything that is connected with it. Quick summary of the capters provides some main ideas how to improve the quality of the product.</p>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="w3-container w3-margin-top w3-center w3-black">
+    <p>Created by Oleksandr Stepanenko. 2018</p>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
