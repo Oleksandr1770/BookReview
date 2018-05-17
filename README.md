@@ -1,2 +1,2 @@
 # BookReview
-https://github.com/Oleksandr1770/BookReview.git
+https://i-book-review.000webhostapp.com/
